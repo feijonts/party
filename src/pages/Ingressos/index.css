@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  color: white;
+  background: #171717;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  margin: 20px 0;
+}
+
+main .ticket {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  background: #151515;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 8px;
+}
+
+main .ticket p {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .ticket small {
+  color: gray;
+  font-size: 14px;
+}
+
+main .ticket button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: rgb(235, 47, 47);
+}
+
+main .ticket button:hover {
+  transition: 0.4s;
+  background-color: rgb(235, 47, 47, 0.6);
+}
+
+main h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#newTicketName {
+  width: 250px;
+  display: none;
+  flex-direction: column;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  border-radius: 10px;
+  background: #1c1c1c;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+
+  padding: 18px 14px;
+}
+
+#newTicketName input {
+  margin: 10px 0;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: #121212;
+  text-align: center;
+
+  outline: none;
+}
+
+#newTicketName button {
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgb(235, 47, 47);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/9dda89868b.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-register">
+        <div class="left-register">
+            <h1>Logue em sua conta<br>E visualize os seus ingressos!</h1>
+            <img src="./images/logo.png" class="left-register-img" alt="Festa Vera">
+        </div>
+        <div class="right-register">
+            <div class="card-register">
+                <h1>Login</h1>
+                <div id="msgError"></div>
+                <div id="msgSucess"></div>
+                <div class="textfield">
+                    <label for="email" id="emailLabel">Email</label>
+                    <input type="text" name="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="textfield">
+                    <label for="password"id="passwordLabel">Senha</label>
+                    <input type="password" name="password" placeholder="Senha" id="password" required>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <button class="btnregister" onclick="login()">Logar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
